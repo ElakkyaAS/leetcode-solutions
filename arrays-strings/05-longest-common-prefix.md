@@ -15,3 +15,31 @@ This ensures we only keep the longest prefix common to all strings.
 Initially thought of sorting the strings and comparing only the first and last, which also works.  
 The direct comparison approach is simpler and easy to implement.  
 Learned that handling edge cases like empty strings or single string input is important.
+
+## Test Cases
+
+### Typical Case
+Input: strs = ["flower","flow","flight"]  
+Output: "fl"  
+Explanation: The longest common prefix among all strings is "fl".
+
+### Edge Case
+Input: strs = ["dog","racecar","car"]  
+Output: ""  
+Explanation: No common prefix exists.
+
+### Edge Case
+Input: strs = ["interspecies","interstellar","interstate"]  
+Output: "inters"  
+Explanation: All strings share "inters" as the prefix.
+
+### Edge Case
+Input: strs = ["throne","throne"]  
+Output: "throne"  
+Explanation: Both strings are identical, so the whole string is the prefix.
+
+### Edge Case
+Input: strs = ["","b"]  
+Output: ""  
+Explanation: One string is empty, so no common prefix.
+

@@ -12,3 +12,18 @@ By swapping the characters at these positions and moving both pointers inward, t
 ### Notes
 Initially thought about using an extra array, but realized that would violate the in-place requirement.  
 Learned that careful pointer movement (left++, right--) ensures correctness and avoids unnecessary loops.
+
+## Test Cases
+
+### Typical Case
+Input: "hello"  
+Output: "olleh"
+
+### Edge Case
+Input: "a"  
+Output: "a"
+
+### Edge Case
+Input: ""  
+Output: ""
+
